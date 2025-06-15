@@ -4,7 +4,7 @@ import GrainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20">
+    <div className="py-16 pt-12 lg:py-24 lg:pt-20 relative z-40">
       <div className="container">
         <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden z-0">
           <div
@@ -27,7 +27,9 @@ export const ContactSection = () => {
               <a
                 href="/Priyansh_resume.pdf"
                 download
-                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max cursor-pointer z-50 relative"
               >
                 <span className="font-semibold">My Resume</span>
                 <ArrowRightIcon className="size-4" />

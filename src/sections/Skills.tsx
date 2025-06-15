@@ -19,7 +19,7 @@ const skills = [
   {
     name: "CSS",
     type: "Styling Language",
-    text: "From layout control to animations, I use modern CSS techniques including Flexbox, Grid, and utility-first frameworks like Tailwind to craft visually engaging UIs.",
+    text: "From layout control to animations, I use modern CSS techniques including Flexbox, Grid, frameworks like Tailwind to craft visually engaging UIs.",
     avatar: CSS,
   },
   {
@@ -37,7 +37,7 @@ const skills = [
   {
     name: "Next.js",
     type: "React Framework",
-    text: "With Next.js, I build fast, SEO-optimized web applications using features like server-side rendering, API routes, image optimization, and file-based routing for seamless user experiences.",
+    text: "I use Next.js to build fast, SEO-friendly apps with server-side rendering, API routes, and optimized performance.",
     avatar: NextJS,
   },
   {

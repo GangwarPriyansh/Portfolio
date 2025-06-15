@@ -1,3 +1,4 @@
+"use client";
 import memojiImage from "@/assets/images/priyansh_img.jpg";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -6,6 +7,18 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import HeroOrbit from "@/components/HeroOrbit";
 export const HeroSection = () => {
+  
+  const handleExploreClick = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleConnectClick = () => {
+    window.open("https://www.linkedin.com/in/priyansh-gangwar/", "_blank");
+  };
+
   return (
     <div className="py-32 md:py-48 lg:py-45 relative z-0">
       <div
@@ -121,7 +134,6 @@ export const HeroSection = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <div className="relative group mb-8">
-
             <div className="w-48 h-48 md:w-60 md:h-60 lg:w-[260px] lg:h-[260px] rounded-full overflow-hidden border-4 border-emerald-400/30 shadow-xl relative z-10">
               <Image
                 src={memojiImage}
@@ -155,15 +167,24 @@ export const HeroSection = () => {
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in transforming designs into functional,
-            high-performing web applications. Let&apos;s discuss your next project
+            high-performing web applications. Let&apos;s discuss your next
+            project
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/30 px-6 h-12 rounded-xl">
+          <button
+            onClick={handleExploreClick}
+            style={{ zIndex: 9999, position: "relative" }}
+            className="inline-flex items-center gap-2 border border-white/30 px-6 h-12 rounded-xl"
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <button
+            onClick={handleConnectClick}
+            style={{ zIndex: 9999, position: "relative" }}
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+          >
             <span className="text-xl">👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>
           </button>

@@ -1,4 +1,5 @@
 "use client";
+import { Phone, Mail } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 import Image from "next/image";
@@ -91,8 +92,24 @@ export const AboutSection = () => {
                 description="I'm a Full Stack Developer with a passion for building modern web applications. I focus on building user friendly digital solutions. Fell free to contact me. "
               />
               <div className="text-center text-sm text-white/60 font-semibold  px-2 pb-4 sm:pb-3 space-y-1">
-                <p>📞 Mobile: +91 7011910231</p>
-                <p>📧 Email: singhpriyansh723@gmail.com</p>
+                <p className="flex items-center justify-center gap-2">
+                  <a
+                    href="tel:+917011910231"
+                    className="flex items-center justify-center gap-2 hover:underline"
+                  >
+                    <Phone className="size-4 text-white/60" /> +91 7011910231
+                  </a>
+                </p>
+
+                <p className="flex items-center justify-center gap-2">
+                  <a
+                    href="mailto:singhpriyansh723@gmail.com"
+                    className="flex items-center justify-center gap-2 hover:underline"
+                  >
+                    <Mail className="size-4 text-white/60" />
+                    singhpriyansh723@gmail.com
+                  </a>
+                </p>
               </div>
             </Card>
 
@@ -142,7 +159,7 @@ export const AboutSection = () => {
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
-                src={mapImage} 
+                src={mapImage}
                 alt="map"
                 className="h-full w-full object-cover object-left-top"
               />
