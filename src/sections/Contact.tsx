@@ -25,7 +25,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <a
-                href="/Priyansh_resume.pdf"
+                href="/PriyanshResume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
