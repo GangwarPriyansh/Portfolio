@@ -4,8 +4,8 @@ import Card from "@/components/Card";
 
 import Hacknovate from "@/assets/images/Hacknovate_Certificate.jpg";
 import SIH from "@/assets/images/SIH_certificate.jpg";
-import javaDSA from "@/assets/images/Java_DSA.jpg";
-import javaBasis from "@/assets/images/Java_Basis.jpg";
+import javaDSA from "@/assets/images/java_DSA.jpg";
+import javaBasis from "@/assets/images/java_basis.jpg";
 
 export const CertificateSection = () => {
   const certificateData = [
