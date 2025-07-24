@@ -6,7 +6,7 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
-
+import resumeAnalyzer from "@/assets/images/resume_analyzer.png";
 const portfolioProjects = [
   {
     event: "Ideathon2.0",
@@ -43,6 +43,18 @@ const portfolioProjects = [
     ],
     link: "https://github.com/pranjalboss123/DigiCourt",
     image: NyayaSetu,
+  },
+  {
+    event: "Personal Project",
+    year: "2025",
+    title: "ResumeBuddy",
+    results: [
+      { title: "Reduced resume creation time by 40%" },
+      { title: "Improved resume analysis accuracy by 35%" },
+      { title: "Boosted interview rates by 30% with ATS optimization" },
+    ],
+    link: "https://github.com/GangwarPriyansh/Resume-Analyzer",
+    image: resumeAnalyzer,
   },
 ];
 
@@ -87,7 +99,7 @@ export const ProjectsSection = () => {
                         key={result.title}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
-                        <CheckCricleIcon className="size-5 md:size-6" />
+                        <CheckCricleIcon className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
                         <span>{result.title}</span>
                       </li>
                     ))}
