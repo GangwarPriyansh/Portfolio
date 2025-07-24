@@ -30,7 +30,10 @@ const config: Config = {
         'ping-large':"ping-large 1s ease-in-out infinite",
         'move-left':"move-left 1s linear infinite",
         'move-right':"move-right 1s linear infinite",
-        'spin-border': "spin-border 7s linear infinite"
+        'spin-border': "spin-border 7s linear infinite",
+        "fade-in-down": "fadeInDown 0.5s ease-out forwards",
+        "slide-down-fade": "slideDownFade 0.3s ease-out forwards",
+        "slide-up-fade": "slideUpFade 0.3s ease-out forwards",
       },
       keyframes:{
         'ping-large':{
@@ -58,6 +61,36 @@ const config: Config = {
         'spin-border': {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
+        },
+                fadeInDown: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideDownFade: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideUpFade: {
+          "0%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
         },
       }
     },

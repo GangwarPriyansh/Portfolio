@@ -60,7 +60,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow=" Real-world Results"
@@ -82,8 +82,8 @@ export const ProjectsSection = () => {
                   <div
                     className="bg-gradient-to-r
                    from-emerald-300 to-sky-400 inline-flex
-                    gap-2 font-bold upercase tracking-widest text-sm 
-                    text-transparent bg-clip-text"
+                    gap-2 font-bold tracking-widest text-sm 
+                    text-transparent bg-clip-text whitespace-nowrap"
                   >
                     <span>{project.event}</span>
                     <span>&bull;</span>
